@@ -5,6 +5,9 @@
 1. [Prerequisites](#Prerequisites)
 2. [Installation](#Installation)
 3. [API Endpoints](#API)
+4. [Test](#Test)
+5. [OpenApi](#OpenApi)
+6. [Micronaut 4.7.6 Documentation](#Micronnaut)
 
 
 This RESTful API enables task management with CRUD operations using the 
@@ -76,17 +79,17 @@ curl --request POST \
 ## Database
 The API uses an embedded H2 database to store tasks, which is automatically created on startup.
 
-## Test
+## Test <a name="Test" />
 The project can be tested with Bruno. Collection is found under src/test/bruno/Tasks.
 
-## OpenAPI
+## OpenAPI <a name="OpenAPI" />
 
 The gradle build will create a swagger documentation under 
 
 Writing OpenAPI file to destination: ./build/classes/java/main/META-INF/swagger/tasks-1.0.0.yml
 
 
-## Micronaut 4.7.6 Documentation
+## Micronaut 4.7.6 Documentation <a name="Micronaut" />
 
 - [User Guide](https://docs.micronaut.io/4.7.6/guide/index.html)
 - [API Reference](https://docs.micronaut.io/4.7.6/api/index.html)
