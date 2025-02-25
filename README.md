@@ -7,7 +7,7 @@
 3. [API Endpoints](#API)
 4. [Test](#Test)
 5. [OpenApi](#OpenApi)
-6. [Micronaut 4.7.6 Documentation](#Micronnaut)
+6. [Micronaut 4.7.6 Documentation](#Micronaut)
 
 
 This RESTful API enables task management with CRUD operations using the 
@@ -82,7 +82,7 @@ The API uses an embedded H2 database to store tasks, which is automatically crea
 ## Test <a name="Test" />
 The project can be tested with Bruno. Collection is found under src/test/bruno/Tasks.
 
-## OpenAPI <a name="OpenAPI" />
+## OpenAPI <a name="OpenApi" />
 
 The gradle build will create a swagger documentation under 
 
