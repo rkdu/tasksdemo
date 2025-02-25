@@ -1,0 +1,34 @@
+meta {
+  name: tasks list
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{BASE_URI}}/tasks
+  body: none
+  auth: none
+}
+
+body:json {
+  {
+    "title": "Tierarzt Besuch",
+    "description": "Katze zur Impfung bringen - 12. Juni 2025 um 11 Uhr",
+    "completed": true
+  }
+}
+
+assert {
+  res.status: eq 200
+  res.body[0].title: eq Tierarzt Besuch
+}
+
+tests {
+  
+  test("get the last id", function() {
+    const id = bru.getEnvVar('ID');
+    expect(res.status).to.be.equal(200);
+    expect(res.body).to.be.a('array');
+  
+  });
+}

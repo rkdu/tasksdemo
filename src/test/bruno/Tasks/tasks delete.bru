@@ -1,0 +1,31 @@
+meta {
+  name: tasks delete
+  type: http
+  seq: 6
+}
+
+delete {
+  url: {{BASE_URI}}/tasks/{{ID}}
+  body: none
+  auth: none
+}
+
+body:json {
+  {
+    "title": "Tierarzt Besuch",
+    "description": "Katze zur Impfung bringen - 12. Juni 2025 um 11 Uhr",
+    "completed": true
+  }
+}
+
+assert {
+  res.status: eq 200
+}
+
+tests {
+  
+  test("get the last id", function() {
+    expect(res.status).to.be.equal(200);
+  
+  });
+}
